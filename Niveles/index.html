@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Memory</title>
+    <link rel="stylesheet" href="CSSNiveles/stylesgame.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de Memoria</h1>
+        <button id="back-menu">Atrás</button> 
+    </header>
+    <video id="background-video" autoplay loop muted>
+        <source id="video-source" src="" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+    <main>
+        <button id="restart">🔄 Reiniciar</button>
+        <div class="panel-time-move">
+            <p>Tiempo: <span id="tiempo">00:00</span></p>
+            <p>Movimientos: <span id="movimientos">0</span></p>
+        </div>
+        <div id="tablero" class="tablero"></div>
+        <p id="mensaje" class="oculto">🎉 ¡Felicidades! Has encontrado todas las parejas.</p>
+    </main>
+    
+    <script src="JSNiveles/scriptgame.js"></script>
+</body>
+</html>
+

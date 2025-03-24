@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: url('../assets/imgs/Fondo\ principal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.level-btn {
+    background-color: white;
+    border: 3px solid;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.level-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Fácil: borde y texto en verde */
+.facil {
+    border-color: green;
+    color: green;
+}
+
+/* Medio: borde y texto en amarillo */
+.medio {
+    border-color: rgb(205, 205, 2);
+    color: rgb(205, 205, 3);
+}
+
+/* Difícil: borde y texto en rojo */
+.dificil {
+    border-color: red;
+    color: red;
+}
+
+/* Estilo para el botón Atrás */
+#back-btn {
+    background-color: white;
+    border: 2px solid #333;
+    color: #333;
+}
