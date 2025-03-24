@@ -204,7 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
         parejasEncontradas = 0;
         // Vuelve a mezclar las cartas y recrea el tablero
         cartas.sort(() => Math.random() - 0.5);
-        mensaje.classList.add("oculto");
         crearTablero();
     });
 
