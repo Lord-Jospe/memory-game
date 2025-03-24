@@ -1,7 +1,7 @@
 // Cargar sonidos
-const flipSound = new Audio("/assets/sounds/pop.mp3");  // Sonido al tocar una carta
-const matchSound = new Audio("/assets/sounds/acierto.mp3"); // Sonido al hacer pareja
-const winSound = new Audio("/assets/sounds/jua.mp3"); // Sonido al ganar
+const flipSound = new Audio("../assets/sounds/pop.mp3");  // Sonido al tocar una carta
+const matchSound = new Audio("../assets/sounds/acierto.mp3"); // Sonido al hacer pareja
+const winSound = new Audio("../assets/sounds/jua.mp3"); // Sonido al ganar
 
 document.addEventListener("DOMContentLoaded", () => {
     // Puedes cambiar esta variable a "facil", "medio" o "dificil"
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Asignar el video de fondo según la dificultad
     const videos = {
-        facil: "/assets/video/facil.mp4",
-        medio: "/assets/video/medio.mp4",
-        dificil: "/assets/video/medio.mp4"
+        facil: "../assets/video/facil.mp4",
+        medio: "../assets/video/medio.mp4",
+        dificil: "../assets/video/medio.mp4"
     };
 
     videoSource.src = videos[dificultad];
@@ -131,8 +131,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const frente = document.createElement("div");
             frente.classList.add("frente");
+
             const img = document.createElement("img");
-            img.src = `/assets/imgs/${imagen}`;
+            img.src = `../assets/imgs/${imagen}`;
             frente.appendChild(img);
 
             carta.appendChild(dorso);
