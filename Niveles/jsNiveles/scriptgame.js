@@ -175,7 +175,13 @@ document.addEventListener("DOMContentLoaded", () => {
             if (parejasEncontradas === numParejas) {
                 winSound.play(); // 🔊 Sonido al ganar
                 clearInterval(timer); // Detener el timer
-                mensaje.classList.remove("oculto");
+
+                // Mostrar la alerta con SweetAlert
+                Swal.fire({
+                    title: "🎉 ¡Felicidades!",
+                    text: "Has encontrado todas las parejas",
+                    icon: "success"
+                });
             }
         } else {
             cartasVolteadas.forEach(carta => {
